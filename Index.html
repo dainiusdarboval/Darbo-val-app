@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8" />
+  <title>Darbo valandos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Darbo valandos</h1>
+  <form id="timeForm">
+    <label>Data: <input type="date" id="date" required></label><br>
+    <label>Išvykimo laikas: <input type="time" id="departure" required></label><br>
+    <label>Darbo pradžia: <input type="time" id="start" required></label><br>
+    <label>Darbo pabaiga: <input type="time" id="end" required></label><br>
+    <label>Grįžimo laikas: <input type="time" id="return" required></label><br>
+    <button type="submit">Pridėti įrašą</button>
+  </form>
+
+  <h2>Įrašai</h2>
+  <table id="entriesTable" border="1">
+    <tr>
+      <th>Data</th>
+      <th>Darbo valandos</th>
+      <th>Kelionės valandos</th>
+    </tr>
+  </table>
+
+  <button onclick="printPage()">Spausdinti</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
